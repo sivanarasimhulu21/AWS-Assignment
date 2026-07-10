@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .card{
+            width:420px;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.3);
+            text-align:center;
+        }
+
+        h1{
+            color:#0d47a1;
+            margin-bottom:20px;
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:15px;
+        }
+
+        td{
+            padding:12px;
+            border-bottom:1px solid #ddd;
+            text-align:left;
+        }
+
+        td:first-child{
+            font-weight:bold;
+            color:#1565c0;
+            width:35%;
+        }
+
+        .footer{
+            margin-top:20px;
+            color:#555;
+            font-size:14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="card">
+
+    <h1> Student Profile</h1>
+
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Chittiboina Siva Narasimhulu</td>
+        </tr>
+
+        <tr>
+            <td>College</td>
+            <td>RGUKT IIIT Srikakulam</td>
+        </tr>
+
+        <tr>
+            <td>Branch</td>
+            <td>Computer Science and Engineering</td>
+        </tr>
+
+        <tr>
+            <td>Email</td>
+            <td>narasimhasl61@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>Current Date</td>
+            <td id="date"></td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        Welcome to My Basic HTML Page 
+    </div>
+
+</div>
+
+<script>
+    document.getElementById("date").innerHTML =
+        new Date().toDateString();
+</script>
+
+</body>
+</html>
+
